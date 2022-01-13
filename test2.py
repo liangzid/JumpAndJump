@@ -114,13 +114,13 @@ def handwork(centerx,centery):
     screen_array=getScreenArray()
     screen_array = cv2.cvtColor(screen_array, cv2.COLOR_BGR2GRAY)
 
-    ## get game position
-    screen=cv2.imread("./screen.png")
-    screen= cv2.cvtColor(screen, cv2.COLOR_BGR2GRAY)
-    screen_p_tl,screen_p_br=getWindowPosition(screen_array,screen)
+    # ## get game position
+    # screen=cv2.imread("./screen.png")
+    # screen= cv2.cvtColor(screen, cv2.COLOR_BGR2GRAY)
+    # screen_p_tl,screen_p_br=getWindowPosition(screen_array,screen)
 
-    print(f"Window top-left posotion: {screen_p_tl}")
-    print(f"Window bottom-right posotion: {screen_p_br}")
+    # print(f"Window top-left posotion: {screen_p_tl}")
+    # print(f"Window bottom-right posotion: {screen_p_br}")
     screen_p_tl=(735,142)
     screen_p_br=(1185,941)
     # centerx=int((screen_p_tl[0]+screen_p_br[0])/2)
